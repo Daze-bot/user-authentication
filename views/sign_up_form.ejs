@@ -4,8 +4,11 @@
     <label for="username">Username</label>
     <input name="username" type="text" placeholder="Username">
     <label for="password">Password</label>
-    <input name="password" type="text" placeholder="Password">
-    <button type="submit">Sign Up</button>
+    <input name="password" type="password" placeholder="Password">
+    <div class="submitOptions">
+      <button type="submit">Sign Up</button>
+      <a href="/users">cancel</a>
+    </div>
   </form>
 
   <% if (errors) { %>

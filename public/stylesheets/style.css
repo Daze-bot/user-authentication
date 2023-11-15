@@ -65,3 +65,9 @@ form input {
   border: 1px solid gray;
   margin-bottom: 20px;
 }
+
+.submitOptions {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
