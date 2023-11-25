@@ -28,7 +28,7 @@ app.set('view engine', 'ejs');
 
 app.use(logger('dev'));
 app.use(express.json());
-app.use(session({ secret: "cats", resave: false, saveUninitialized: true }));
+app.use(session({ secret: process.env.SESSION_SECRET, resave: false, saveUninitialized: true }));
 
 app.use(passport.initialize());
 app.use(passport.session());
