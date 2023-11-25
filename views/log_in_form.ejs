@@ -1,0 +1,22 @@
+<div class="log-in-form">
+  <h1><%= title %></h1>
+  <form action="" method="POST">
+    <label for="username">Username</label>
+    <input name="username" id="username" type="text" placeholder="Username" value="<%= username %>">
+    <label for="password">Password</label>
+    <input name="password" id="password" type="password" placeholder="Password">
+    <div class="submitOptions">
+      <button type="submit">Log In</button>
+      <a href="/users">cancel</a>
+    </div>
+  </form>
+
+  <% if (errors) { %>
+    <ul class="form-errors">
+      <h4 class="text-danger">Errors:</h4>
+      <% errors.forEach(error => { %>
+        <li>- <%= error %></li>
+      <% }) %>
+    </ul>
+  <% } %>
+</div>

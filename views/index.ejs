@@ -1,5 +1,13 @@
 <div class="home">
   <h1><%= title %></h1>
-  <p><b>Total Users: </b><%= user_count %></p>
-  <a href="/users/sign-up"><button>Sign Up</button></a>
+  <% if (user) { %>
+    <p>Hi <%= user.username %>!</p>
+    <a href="/users/log-out"><button>Log Out</button></a>
+  <% } else { %>
+    <p><b>Total Users: </b><%= user_count %></p>
+    <div>
+      <a href="/users/sign-up"><button>Sign Up</button></a>
+      <a href="/users/log-in"><button>Log In</button></a>
+    </div>
+  <% } %>
 </div>

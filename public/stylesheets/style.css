@@ -44,8 +44,21 @@ h1 {
   margin-bottom: 40px;
 }
 
+h4 {
+  margin-top: 40px;
+}
+
 .home p {
-  margin-bottom: 10px;
+  margin-bottom: 40px;
+}
+
+.home div {
+  display: flex;
+  gap: 40px;
+}
+
+.home button {
+  width: 120px;
 }
 
 form {
